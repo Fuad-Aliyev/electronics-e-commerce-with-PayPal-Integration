@@ -1,19 +1,16 @@
 <?php
 
-	if(!isset($_SESSION['email'])) {
-
+	if(!isset($_SESSION['email']))
 		echo "<script>window.open('login.php', '_self')</script>";
-	} 
-	else {
-
+	else
 ?>
-<form action="" method="post" style="padding: 100px;">
+	<form action="" method="post" style="padding: 100px;">
 
-	<b>Insert New Category</b>
+		<b>Insert New Category</b>
 
-	<input type="text" name="new_cat" required />
-	<input type="submit" name="add_cat" value="Add Category" />
-</form>
+		<input type="text" name="new_cat" required />
+		<input type="submit" name="add_cat" value="Add Category" />
+	</form>
 
 <?php
 	
@@ -35,5 +32,4 @@
 			echo "<script>alert('Something went wrong!!!')</script>";
 		}
 	}
-}
 ?>
