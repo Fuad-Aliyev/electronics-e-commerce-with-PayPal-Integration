@@ -51,7 +51,7 @@
 			$update_pass = "UPDATE customers SET customer_pass='$new_pass' WHERE customer_email='$user'";
 			$run_update = mysqli_query($conn, $update_pass);
 
-			echo "<script>alert('Your password was updated successfully!!!')</script>";
+			echo "<script>alert('Password has been successfully updated!!!')</script>";
 			echo "<script>window.open('my_account.php', '_self')</script>";
 		}
 	}
